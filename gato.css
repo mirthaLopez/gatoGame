@@ -1,0 +1,27 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+#contenedorGato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+.casilla{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
