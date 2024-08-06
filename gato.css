@@ -1,20 +1,29 @@
 .mainContainer {
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
+}
+
+body{
+    background-color: #00CCFF;
 }
 
 #contenedorGato {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border: 1px solid black;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
+    background-image: url(../gatoGame/269.jpg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .casilla{
+    font-size: 40px;
+    color: black;
     border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
