@@ -25,3 +25,9 @@
     display: flex;
     justify-content: center;
 }
+
+.textoGane{
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
