@@ -1,47 +1,41 @@
-const casillas=document.getElementsByClassName("casilla");
-const textoAdvertencia=document.getElementById("textoAdvertencia")
-var turno=1;
-
+const casillas = document.getElementsByClassName("casilla");
+const textoAdvertencia = document.getElementById("textoAdvertencia");
 
 
 for (let index = 0; index < casillas.length; index++) {
-        casillas[index].addEventListener("click", function () {
-            if (casillas[index].textContent=="") {
-                casillas[index].innerHTML="X"; 
-                let num = Math.floor((Math.random() * 8) + 1);
-                console.log(num);
-
-                if (casillas[num].textContent==="") {
-                    casillas[num].innerHTML="O";
-                }else if(casillas[num].textContent==="X"||casillas[num].textContent==="O" ) { 
-                    for (let index = 0; casillas[index].innerHTML===""; index++) {
-                        num = Math.floor((Math.random() * 8) + 1);
-                        if(casillas[num].textContent===""){
-                            casillas[num].innerHTML="O";
-                        }
-                         
-                    }
-                }
-
-            }else{
-                textoAdvertencia.innerHTML="Casilla llena, elige otra casilla"
-            } 
-           
-        })  
+    casillas[index].addEventListener("click", function () {
+        if (casillas[index].textContent == "") {
+            casillas[index].innerHTML = "X";
+    
+            let num = Math.floor((Math.random() * 9) + 0);
+            console.log(num);
+            if (casillas[num].textContent === "") {
+                casillas[num].innerHTML = "O";
+        
+            } else {
+                for (let index = 0; index < 20; index++) {
+                    num = Math.floor((Math.random() * 9) + 0);
+                    console.log(num);
+                    if(casillas[num].textContent===""){
+                        casillas[num].innerHTML="O";
+                        break;
+                    } 
+                } 
+            }
+        }
+    })
 }
 
-
-/*function turnos() {
-    if (turno===1) {
-        turno=2;
-    }else if (turno===2) {
-        turno=1;
-    }
-}*/
-
-
-
-
-
-
-
+/* if (contador <= 9) {
+                    let index = 0;
+                    while (index === 0) {
+                        num = Math.floor((Math.random() * 9) + 0);
+                        console.log(num);
+                        if (casillas[num].textContent === "") {
+                            casillas[num].innerHTML = "O";
+                            contador++;
+                            index++;
+                            break;
+                        }
+                    }
+                }*/ //El problema es con la ultima casilla, se hace un ciclo infinito porque nunca haya un espacio vacio para la O
