@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #00CCFF;
+    background-color:#073980;
 }
 
 #contenedorGato {
@@ -14,15 +14,17 @@ body{
     grid-template-rows: repeat(3, 1fr);
     height: 350px;
     width: 350px;
-    background-image: url(../gatoGame/269.jpg);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    gap: 0.5rem;
 }
 
 .casilla{
-    font-size: 40px;
-    color: black;
-    border: 1px solid black;
+    font-size: 60px;
+    font-weight: 800;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid rgb(0, 208, 255);
+    border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: center;
@@ -33,10 +35,13 @@ body{
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: larger;
 }
 
 .textoGane{
     display: flex;
     justify-content: center;
-    color: blue;
 }
