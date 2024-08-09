@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gato Game</title>
   <link rel="stylesheet" href="gato.css">
 </head>
+
 <body>
-  <div class="titulo"><h1>Tic Tac Toe</h1></div>
-    <div class="mainContainer">
-        <div id="contenedorGato">
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-           <div class="casilla"></div>
-        </div>
+  <div class="titulo">
+    <h1>Classic Tic Tac Toe</h1>
+  </div>
+  <div class="textoGane">
+    <h2 id="textoGanador"></h2>
+  </div>
+  <div class="mainContainer">
+    <div class="jugador">
+      <div class="simbolo">
+        <p class="text">X</p>
+      </div>
+      <div>
+        <p>Player</p>
+        <p id="ganeJugador"></p>
+      </div>
     </div>
-   <div class="titulo"> <p id="textoAdvertencia"></p></div>
-   <div class="textoGane"><h2 id="textoGanador"></h2></div>
-  <script src="tic-tac-toe.js"></script>  
+    <div id="contenedorGato" class="contenedorGato">
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+      <div class="casilla"></div>
+    </div>
+    <div class="jugador">
+      <div class="simbolo">
+        <p class="text">O</p>
+      </div>
+      <div>
+        <p>Computer</p>
+        <p id="ganeMaquina"></p>
+      </div>
+    </div>
+  </div>
+  <div class="contenedorBtn">
+    <div class="btnReload"> <button id="reiniciar">Play again</button></div>
+    <div class="btnReloadScore"> <button id="btnReloadScore">Clear score</button></div>
+  </div>
+  <div class="titulo2">
+    <p id="textoAdvertencia"></p>
+  </div>
+
+
+
+
+  <script src="tic-tac-toe.js"></script>
 </body>
+
 </html>
